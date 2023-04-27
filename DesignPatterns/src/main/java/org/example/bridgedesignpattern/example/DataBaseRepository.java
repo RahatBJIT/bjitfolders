@@ -1,28 +1,28 @@
 package org.example.bridgedesignpattern.example;
-import javax.persistence.EntityTransaction;
-import javax.persistence.EntityManager;
+//import javax.persistence.EntityTransaction;
+//import javax.persistence.EntityManager;
 
 class DataBaseRepository implements StorageRepository{
     public void store(BaseEntiy entiy){
 
-        EntityTransaction tx = getEntityManager().getTransaction();
+//        EntityTransaction tx = getEntityManager().getTransaction();
 
 
         try {
 
-            tx.begin();
+//            tx.begin();
 
-            getEntityManager().persist(entiy);
+//            getEntityManager().persist(entiy);
 
-            tx.commit();
+//            tx.commit();
 
         } catch (Exception ex) {
 
-            if (tx.isActive()) {
-
-                tx.rollback();
-
-            }
+//            if (tx.isActive()) {
+//
+//                tx.rollback();
+//
+//            }
 
         }
 

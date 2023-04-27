@@ -3,8 +3,9 @@ package org.example.bridgedesignpattern.example;
 class StudentRepository implements BaseRepository {
 
     private StorageRepository repository;
-    public StudentRepository(StorageRepository repository){
-        this.repository=repository;
+
+    public StudentRepository(StorageRepository repository) {
+        this.repository = repository;
     }
 
     @Override
@@ -12,7 +13,7 @@ class StudentRepository implements BaseRepository {
 
     }
 
-    public StorageRepository getRepository(){
+    public StorageRepository getRepository() {
         return repository;
     }
 
@@ -27,5 +28,8 @@ class StudentRepository implements BaseRepository {
     }
 
     private String getNextId() {
+        //fd
+        return null;
     }
+
 }
